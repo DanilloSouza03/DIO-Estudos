@@ -7,6 +7,22 @@
     <title>Contatos</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <style>
+        header {
+            background: #056c6c url(../imagens/header-contato.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin: 70px 0px 20px 0;
+        }
+
+        fieldset.grupo {
+            border-radius: 5%;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -38,42 +54,56 @@
                 <h2>Salvador - BA</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124450.96878892781!2d-38.49014588453669!3d-12.901755682669357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1677605449575!5m2!1spt-BR!2sbr" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <address>Av. Afrânio Fictícia, 651 - Fictícia do Fictícia, Salvador - BA, 00000-000</address>
-                <form action="#" method="post">
+                <form action="#" method="post" autocomplete="off">
                     <fieldset>
                         <legend>Fale Conosco</legend>
-                            <fieldset>
+                            <fieldset class="grupo">
                                 <legend>Identificação</legend>
-                                <label for="inome">Nome:</label>
-                                <input type="text" placeholder="Nome Completo" name="nome" id="inome" required>
+                                <div>
+                                    <label for="inome">Nome:</label>
+                                    <input type="text" placeholder="Nome Completo" name="nome" id="inome" required>
+                                </div>
                                 <br>
-                                <label for="iemail">E-mail:</label>
-                                <input type="email" placeholder="seu@email.com" name="email" id="iemail" required>
+                                <div>
+                                    <label for="iemail">E-mail:</label>
+                                    <input type="email" placeholder="seu@email.com" name="email" id="iemail" required>
+                                </div>
                                 <br>
-                                <label for="itel">Telefone<small>(opcional)</small>:</label>
-                                <input type="tel" placeholder="" name="tel" id="itel">
+                                <div>
+                                    <label for="itel">Telefone<small>(opcional)</small>:</label>
+                                    <input type="tel" placeholder="(xx)xxxxx-xxxx" name="tel" id="itel">
+                                </div>
                             </fieldset>
                             <br>
-                            <fieldset>
+                            <fieldset class="grupo">
                                 <legend>Sua Mensagem</legend>
-                                <label for="iunidade">Unidade:</label>
-                                <select name="unidade" id="iunidade" required>
-                                    <option value="" selected>---Escolha---</option>
-                                    <option value="matriz">São Paulo - SP (Matriz)</option>
-                                    <option value="belo-horizonte">Belo Horizonte - MG</option>
-                                    <option value="leblon">Leblon - RJ</option>
-                                    <option value="salvador">Salvador - BA</option>
-                                </select>
+                                <div>
+                                    <label for="iunidade">Unidade:</label>
+                                    <select name="unidade" id="iunidade" required>
+                                        <option value="" selected>---Escolha---</option>
+                                        <option value="matriz">São Paulo - SP (Matriz)</option>
+                                        <option value="belo-horizonte">Belo Horizonte - MG</option>
+                                        <option value="leblon">Rio de Janeiro - RJ</option>
+                                        <option value="salvador">Salvador - BA</option>
+                                    </select>
+                                </div>
                                 <br>
-                                <label for="iassunto">Assunto:</label>
-                                <input type="text" name="assunto" id="iassunto" required>
+                                <div>
+                                    <label for="iassunto">Assunto:</label>
+                                    <input type="text" name="assunto" id="iassunto" required>
+                                </div>
                                 <br>
-                                <label for="imensagem">Mensagem:</label>
-                                <br>
-                                <textarea name="mensagem" id="imensagem" cols="30" rows="10" required>
+                                <div>
+                                    <label for="imensagem">Mensagem:</label>
+                                    <br>
+                                    <textarea name="mensagem" id="imensagem" cols="30" rows="10" required>
                                 </textarea>
+                                </div>
                                 <br>
-                                <input type="submit" value="Enviar sua mensagem">
-                                <input type="reset" value="Limpar">
+                                <div>
+                                    <input type="submit" value="Enviar sua mensagem">
+                                    <input type="reset" value="Limpar">
+                                </div>
                             </fieldset>
                     </fieldset>
                 </form>
