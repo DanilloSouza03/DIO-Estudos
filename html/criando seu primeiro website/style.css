@@ -8,19 +8,27 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
+    width: 1400px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: #7fffd4;
 }
 main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
+
+header h1 {
+    margin: 35px 0px 0px 20px;
+    font-size: 3em;
+    color: #033c3c;
+}
+
+
 nav {
     width: 15%;
-    background-color: aqua;
+    background-color: #00ffff;
     text-decoration: none;
     padding: 10px 20px 0px;
 }
@@ -59,7 +67,7 @@ header {
     min-height: 150px;
 }
 article {
-    background-color: white;
+    background-color: #ffffff;
     min-height: 300px;
     padding: 20px;
 }
@@ -67,13 +75,33 @@ footer {
     background-color: #6338f0;
     min-height: 40px;
     text-align: center;
+    color: #ffffff;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    margin: 0% 0% 2% 0%;
+}
+
+footer li {
+    margin: 1%;
 }
 
 footer a {
-    color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a#contato-footer {
+    display: block;
+    text-decoration: none;
+    margin-top: 1.5%;
+    font-size: 1.30em;
 }
 
 footer a:hover {
-    font-size: 1.05em;
-    text-decoration: none;
+    text-decoration: underline;
 }

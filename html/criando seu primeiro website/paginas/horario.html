@@ -6,6 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horários</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <style>
+        table {
+            margin: auto;
+            height: 350px;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            font-size: 1.3em;
+            justify-content: center;
+            background-color: #818181;
+            color: #ffffff;
+        }
+        
+        tr:nth-child(even){
+            background-color: #d3d3d3;
+        }
+        
+        tr:hover {
+            background-color: #818181ac;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+    </style>    
 </head>
 <body>
     <div class="wrapper">
@@ -25,13 +54,66 @@
             </header>
     
             <article>
+                <h2>Descrição dos Serviços</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sequi, dolores veritatis at maiores fugiat quia nisi repellendus! Eius consequatur minus assumenda explicabo sequi id iusto eveniet placeat rerum quia?Lorem ipsum dolor sit, amet consectetur adipisicing elit. In neque commodi qui. Veniam nesciunt numquam impedit rerum quibusdam nobis, incidunt enim. Corrupti accusamus aut quaerat nihil provident deserunt, cupiditate non.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dicta rerum a id amet quia voluptatem, consequuntur sed nihil quod, nisi perspiciatis accusamus soluta iure, vitae sit quibusdam nemo quos.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis alias dolorem obcaecati accusamus natus voluptate ad excepturi, cum culpa consequuntur exercitationem dignissimos, tenetur perferendis quibusdam recusandae officia omnis sapiente ut?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, adipisci saepe doloribus optio consequatur ut sed dolorem. Pariatur itaque vero tenetur consectetur odio optio debitis. Odit impedit ipsa eos dolor?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, omnis? Nemo ipsa ipsam nulla tempora soluta vel? Eveniet asperiores incidunt consequatur adipisci ducimus ullam qui nisi sapiente exercitationem, deserunt rerum!</p>
+                <h2>Horários de Atendimentos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo itaque tempora aliquam possimus porro at magni minima, a laborum magnam. Saepe, ducimus doloremque. Unde aut perspiciatis facilis blanditiis! Nihil, mollitia?</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Serviços</th>
+                            <th scope="col">Segunda a Sexta</th>
+                            <th scope="col">Sábados</th>
+                            <th scope="col">Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>     
+                        <tr>
+                            <th scope="row">Clínico Geral</th>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 12h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ortodontia</th>
+                            <td>08h- 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 12h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Odontopediatria</th>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 12h</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Implantodontia</th>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dentística</th>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, adipisci saepe doloribus optio consequatur ut sed dolorem. Pariatur itaque vero tenetur consectetur odio optio debitis. Odit impedit ipsa eos dolor?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, omnis? Nemo ipsa ipsam nulla tempora soluta vel? Eveniet asperiores incidunt consequatur adipisci ducimus ullam qui nisi sapiente exercitationem, deserunt rerum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita ut adipisci id dolore aperiam architecto reiciendis repellat nemo sequi laborum veniam nulla, distinctio numquam veritatis recusandae, est qui excepturi ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae impedit veniam labore eveniet aperiam ducimus nesciunt culpa, rem ad a sit assumenda quo sunt minus harum quis autem cum.</p>
             </article>
     
             <footer>
+                <a href="contato.html" target="_self" id="contato-footer">Contatos</a>
+                <ul>
+                    <li><address>São Paulo - SP</address></li>
+                    <li>|</li>
+                    <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+                    <li>|</li>
+                    <li>Fale Conosco</li>
+                </ul>
                 <p>Desenvolvido por <a href="https://www.linkedin.com/in/danillosouza03/" target="_blank">Danillo de Souza</a></p>
             </footer>
         </main>
